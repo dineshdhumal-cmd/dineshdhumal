@@ -5,55 +5,98 @@
   <title>Dinesh Dhumal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
-      text-align: center;
-      padding: 40px;
-    }
-    img {
-      width: 140px;
-      border-radius: 50%;
-      margin-bottom: 15px;
-    }
-    h1 {
-      margin: 10px 0;
-    }
-    p {
-      color: #555;
-    }
-    a {
-      display: block;
-      margin: 10px auto;
-      width: 220px;
-      padding: 12px;
-      text-decoration: none;
-      color: white;
-      background: #0077b5;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-    a.github { background: #333; }
-    a.insta { background: #e1306c; }
-    a.mail { background: #28a745; }
-  </style>
+  :root {
+    --bg: #f5f7fa;
+    --card: #ffffff;
+    --text: #111;
+    --muted: #555;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    background: var(--card);
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    width: 100%;
+    max-width: 360px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    margin: 10px 0 6px;
+    font-size: 26px;
+  }
+
+  p {
+    margin: 0 0 25px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  a {
+    display: block;
+    margin: 12px auto;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  }
+
+  .linkedin { background: #0077b5; color: #fff; }
+  .github   { background: #24292e; color: #fff; }
+  .insta    { background: #e1306c; color: #fff; }
+  .mail     { background: #2ea44f; color: #fff; }
+
+  footer {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #888;
+  }
+</style>
+
 </head>
 <body>
 
-  <img src="photo.jpg" alt="Dinesh Dhumal">
+  <div class="card">
+    <img src="photo.jpg" alt="Dinesh Dhumal">
 
-  <h1>Dinesh Dhumal</h1>
-  <p>Computer Engineering Student | Tech & Creative Explorer</p>
+    <h1>Dinesh Dhumal</h1>
+    <p>Computer Engineering Student | Tech & Creative Explorer</p>
 
-  <a href="https://www.linkedin.com/in/dineshdhumal" target="_blank">LinkedIn</a>
-  <a class="github" href="https://github.com/dineshdhumal-cmd" target="_blank">GitHub</a>
-  <a class="insta" href="https://instagram.com/dineshdhumald" target="_blank">Instagram</a>
-  <a class="mail" href="mailto:dhumald069@gmail.com">Email Me</a>
-  <ol>
-  <li>dhumald069@gmail.com</li>
-  <li>dinesh.dhumal@indiraicem.ac.in</li>
-</ol>
+    <a class="linkedin" href="https://www.linkedin.com/in/dineshdhumal" target="_blank">LinkedIn</a>
+    <a class="github" href="https://github.com/dineshdhumal-cmd" target="_blank">GitHub</a>
+    <a class="insta" href="https://instagram.com/dineshdhumald" target="_blank">Instagram</a>
+    <a class="mail" href="mailto:dhumald069@gmail.com">Email Me</a>
+
+    <footer>© 2026 Dinesh Dhumal</footer>
+  </div>
 
 </body>
+
 </html>
 
