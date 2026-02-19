@@ -1,102 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dinesh Dhumal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-  :root {
-    --bg: #f5f7fa;
-    --card: #ffffff;
-    --text: #111;
-    --muted: #555;
-  }
-
-  body {
-    margin: 0;
-    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-
-  .card {
-    background: var(--card);
-    padding: 40px 30px;
-    border-radius: 16px;
-    text-align: center;
-    width: 100%;
-    max-width: 360px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-  }
-
-  img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-  }
-
-  h1 {
-    margin: 10px 0 6px;
-    font-size: 26px;
-  }
-
-  p {
-    margin: 0 0 25px;
-    color: var(--muted);
-    font-size: 14px;
-  }
-
-  a {
-    display: block;
-    margin: 12px auto;
-    padding: 12px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-
-  a:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-  }
-
-  .linkedin { background: #0077b5; color: #fff; }
-  .github   { background: #24292e; color: #fff; }
-  .insta    { background: #e1306c; color: #fff; }
-  .mail     { background: #2ea44f; color: #fff; }
-
-  footer {
-    margin-top: 25px;
-    font-size: 12px;
-    color: #888;
-  }
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinesh Dhumal | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <nav>
+        <a href ="https://dineshdhumal.in" ><div class="logo">DineshDhumal<span>.in</span></div></a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <div class="card">
-    <img src="photo.jpg" alt="Dinesh Dhumal">
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="assets\photo1.png" alt="Dinesh Dhumal Profile Photo">
+            </div>
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Dinesh Dhumal</span></h1>
+                <h3>Computer Engineering Student </h3>
+                <p>I’m a second-year Computer Engineering student focused on building strong programming fundamentals and real-world projects. Currently exploring web development, data structures, and problem-solving while continuously improving my skills.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h1>Dinesh Dhumal</h1>
-    <p>Computer Engineering Student | Tech & Creative Explorer</p>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <p>I am a Computer Engineering student at ICEM Pune with a strong interest in software development and problem-solving.
+            I believe in learning by building — from creating web projects to experimenting with new technologies and ideas.  
+            Currently, I am focusing on improving my core skills in programming, data structures, and development.
+            Alongside this, I am gradually exploring fields like AI and modern technologies to understand how they can be applied in real-world scenarios.
+            My goal is to grow step by step and become a skilled developer who can build meaningful and practical solutions.
+            </p>
+        </div>
+    </section>
 
-    <a class="linkedin" href="https://www.linkedin.com/in/dineshdhumal" target="_blank">LinkedIn</a>
-    <a class="github" href="https://github.com/dineshdhumal-cmd" target="_blank">GitHub</a>
-    <a class="insta" href="https://instagram.com/dineshdhumald" target="_blank">Instagram</a>
-    <a class="mail" href="mailto:dhumald069@gmail.com">Email Me</a>
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fas fa-code"></i><p>C / C++</p></div>
+            <div class="skill-card"><i class="fab fa-python"></i><p>Python</p></div>
+            <div class="skill-card"><i class="fas fa-brain"></i><p>AI </p></div>
+            <div class="skill-card"><i class="fab fa-html5"></i><p>HTML & CSS</p></div>
+            <!--div class="skill-card"><i class="fas fa-database"></i><p>Data Structures</p></div>
+            <div class="skill-card"><i class="fab fa-git-alt"></i><p>Git & GitHub</p></div-->
+        </div>
+    </section>
 
-    <footer>© 2026 Dinesh Dhumal</footer>
-  </div>
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                 <h3>Personal Portfolio Website</h3>
+                <p>Designed and developed a responsive personal portfolio with clean UI,
+                structured layout, and smooth user experience using HTML and CSS.</p>
+                <span>HTML • CSS • GitHub Pages</span><br>
+                <a href="https://dineshdhumal.in" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="project-card">
+                <h3>Reality Engine AI (Hackathon Project)</h3>
+                <p>Participated in a hackathon where I worked on building a prototype using Google AI tools.  
+                Focused on understanding prompt engineering and experimenting with AI-based solutions in a team environment.
+                </p>
+                <span>Google AI Studio • Gemini • Prompt Engineering</span><br>
+                <a href="https://ai.studio/apps/9e63b1c9-bc12-4dab-9049-4c61699dd3a9?fullscreenApplet=true" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            <!--
+            </div>
+            <div class="project-card">
+                <h3>project 3</h3>
+                <p>An application built using Google AI Studio capable of predicting IPL match winners and providing live insights.</p>
+                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="project-card">
+                <h3>Onboarding Knowledge Assistant</h3>
+                <p>An AI-powered assistant built with Retrieval-Augmented Generation (RAG) to streamline user onboarding processes.</p>
+                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+        -->
+        </div>
+    </section>
 
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>Get In Touch  
+        I’m currently open to internships, collaborations, and opportunities to learn and grow. <br> 
+        Feel free to reach out — I’d love to connect and build something meaningful.!</p>
+        <div class="social-links">
+            <a href="mailto:your-dhumald069@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/dineshdhumal-cmd" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/dineshdhumal" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/dineshdhumal.in" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Dinesh Dhumal. Designed & Built with code.</p>
+    </footer>
 </body>
-
 </html>
-
