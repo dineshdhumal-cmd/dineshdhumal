@@ -19,7 +19,7 @@ Team-built AI solution using advanced prompt engineering during Google AI hackat
 
 ## 📞 Let's Connect
 - 🌐 **Portfolio**: [dineshdhumal.in](https://dineshdhumal.in)
-- 💼 **LinkedIn**:[ linkedin.com/in/dinesh-dhumal-cmd](https://www.linkedin.com/in/dineshdhumal/)
+- 💼 **LinkedIn**:[ linkedin.com/in/dineshdhumal](https://www.linkedin.com/in/dineshdhumal/)
 - 📧 **Email**: dhumald069@gmail.com
 
 
